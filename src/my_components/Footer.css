@@ -1,7 +1,8 @@
 .footer{
     background: linear-gradient(to right, #0099ff 0%, #0f51a7 25%);
     height: 85px;
-   
+   position:fixed;
+   bottom:0;
    width: 100%;
    
    color: white;

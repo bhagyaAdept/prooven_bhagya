@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import '../my_components/Navbar.css';
+import '../my_components/Footer.css';
 import Logo from '../images/logo.png';
 
 import  'jquery';
+function Transcript() {
+  return <h2>Users</h2>;
+}
 class Navbar extends Component{
     render(){
         return(
+          
             <div>
               <div className="container-fluid">
               <nav className="navbar header-top fixed-top navbar-expand-lg  ">
@@ -18,9 +24,11 @@ class Navbar extends Component{
                      <li className="dropdown">
                         <Link to="#" className="dropdown-toggle" data-toggle="dropdown"> <p id="hexagon" className="toggle_icon"><i className="fa fa-bars"></i></p> </Link>
                           <ul className="dropdown-menu">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/login">Login</Link></li>
-                            <li><Link to="/signup">Signup</Link></li>
+                            <li><Link to={"/"}>Home</Link></li>
+                            <li><Link to={"/login"}>Login</Link></li>
+                            <li><Link to={"/signup"}>Signup</Link></li>
+                            <li><Link to={"/signin"}>Signin</Link></li>
+                            <li><Link to={"../transcript"}>Transcript</Link></li>
                            
                             
                           </ul>
@@ -44,6 +52,7 @@ class Navbar extends Component{
     </nav>{/* nav */}
 </div>{/* container fluid */}
 </div>
+
         );
     }
 }
