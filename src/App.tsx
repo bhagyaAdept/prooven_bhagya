@@ -8,6 +8,7 @@ import Login from "./pages/login/login";
 import Signup from "./pages/signup/signup";
 import Feedback from "./pages/feedback/feedback";
 import Notifications from "./pages/notifications/notifications";
+import Profile from "./pages/profile/profile";
 class App extends React.Component {
   public render() {
     return (
@@ -19,6 +20,7 @@ class App extends React.Component {
     <Route path='/signup' exact component={Signup}/>
     <Route path='/feedback' exact component={Feedback}/>
     <Route path='/notifications' exact component={Notifications}/>
+    <Route path='/profile' exact component={Profile}/>
     <Footer/> 
     </div>
     );

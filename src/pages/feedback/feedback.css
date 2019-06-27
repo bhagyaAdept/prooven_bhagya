@@ -108,3 +108,27 @@ font-weight: 0;
         height: 15px;
       }
 }
+.bkg_white{
+    background: #fff;
+}
+.pdg_25{
+    padding: 0px  25px;
+}
+.flt_rgt{
+    float: right;
+}
+.qr-img{
+    text-align: center;
+}
+.qr-img img{
+    width: 100%;
+    max-width: 30%;
+    margin: auto; 
+}
+.qr-img p{
+    letter-spacing: 1px;
+}
+.address h4{
+    font-weight: 600;
+
+}
